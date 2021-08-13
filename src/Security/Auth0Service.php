@@ -133,7 +133,10 @@ class Auth0Service
             $this->issuer = $authorizedIssuer;
         }
 
-        $this->a0 = new Authentication($this->domain, $this->clientId);
+        $this->a0 = new Authentication([
+            'domain' => $this->domain,
+            'clientId'=> $this->clientId
+        ]);
     }
 
     /**
