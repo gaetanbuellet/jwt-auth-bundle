@@ -21,7 +21,7 @@
   "require": {
     "php": "^7.3 | ^8.0",
     "symfony/framework-bundle": "^4.4 || ~5.1",
-    "auth0/auth0-php": "^7.6"
+    "auth0/auth0-php": "7.9.3"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.3",
@@ -60,5 +60,16 @@
     "psr-4": {
       "Auth0\\JWTAuthBundle\\": "Tests/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url":  "git@github.com:gaetanbuellet/auth0-php.git"
+    },
+    {
+      "type": "vcs",
+      "url":  "git@github.com:gaetanbuellet/php-jwt.git"
+    }
+  ]
+
 }
